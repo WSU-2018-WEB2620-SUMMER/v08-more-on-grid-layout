@@ -1,0 +1,29 @@
+.container .item {
+  background: blue;
+  font-size: 2rem;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+}
+
+.container {
+  background: red;
+  padding: 20px;
+  margin: 10px;
+  height: 50vh;
+  
+  display: grid;
+  grid: auto-flow 75px / repeat(4, 100px);
+  
+  justify-items: stretch;
+  align-items: stretch;
+  
+  justify-content: space-between;
+  align-content: space-evenly;
+}
+
+.item:nth-child(7){
+  justify-self: center;
+  align-self: start;
+}
+
